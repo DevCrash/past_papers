@@ -29,7 +29,7 @@ function upperNavigation()
 
     return $nav;
 }
-function printLoginForm()dwjqidjiqwd
+function printLoginForm()
 {
     $error ='';
   $form= '<form id="overlay_form" style="display:none" method="post" action="'.$_SERVER['PHP_SELF'].'" >
