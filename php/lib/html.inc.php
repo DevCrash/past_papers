@@ -21,43 +21,32 @@ function getHtmlFooter()
 }
 function upperNavigation()
 {
+    $sessionShowForm ='';
     $nav= '<div id="navigation"><a href="current_news.php" id="it_news" > IT news</a>
           <a href="final_year_project_ideas.php" id="project_ideas" > Final year project ideas</a>
-          <a href="past_exams.php" id="papers" >Available papers</a>
+          <a href="past_exams.php" id="papers" >Available papers</a>';
 
-          <input type="button" value="Login" id="pop" onclick="formPopup();"/>';
+          $nav .= '<form id="pop">
+          <input type="submit" value="Login"  name="pop" onclick="formPopup();"/></form>';
 
+    if(isset($_POST['pop'])) {
+      $sessionShowForm = $_SESSION['showForm'];
+    }
     return $nav;
 }
 function printLoginForm()
 {
-    $error ='';
+
   $form= '<form id="overlay_form" style="display:none" method="post" action="'.$_SERVER['PHP_SELF'].'" >
     <input onclick="clear_form_elements(this.form); formFadeOut();" type="submit" value="Close" id="close" name="close"/>
 
      <div class="login_text">Please enter username and password</div>';
 
-    if(!isset($_POST['login_button'])) {
-        count($_SESSION['error_login'] = '');
-    } else {
-        if(isset($_SESSION['error_login'])) {
-        if(count($_SESSION['error_login']) > 0)
-        {
-
-            foreach($_SESSION['error_login'] AS $value) {
-                $error .= $value;
-            }
-
-            $form .=$error;
-        }
-
-
-    }
-}
     if(isset($_POST['close']))
     {
         unset($_SESSION['error_login']);
     }
+
   $form .='<label for="username" class="label_username">Username: </label>
          <input type="text" name="username" id="username" placeholder="Username" value="'.(isset($_POST['username'])? $_POST['username'] : '').'"/><br /><br/>
 
