@@ -1,0 +1,120 @@
+#overlay_form{
+
+    border: 5px solid #90ee90;
+    padding: 10px;
+    background: white;
+    width: 300px;
+    height: 230px;
+    border-radius: 10px;
+
+}
+#pop{
+    display: block;
+    border: 1px solid gray;
+    width: 65px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 5px;
+    text-decoration: none;
+  float: left;
+}
+#project_ideas{
+    float: left;
+    display: block;
+    border: 1px solid gray;
+    width: 200px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 auto;
+}
+#papers{
+    float: left;
+    display: block;
+    border: 1px solid gray;
+    width: 200px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 auto;
+}
+#it_news{
+    float: left;
+    display: block;
+    border: 1px solid gray;
+    width: 200px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 auto;
+}
+#navigation{
+    margin-left: 133px;
+}
+#username{
+    float: right;
+    margin-top: 50px;
+}
+#password{
+    float: right;
+    margin-top: 10px;
+}
+#close{
+    float: right;
+}
+.login_text{
+    margin-top: 30px;
+}
+.label_username{
+    margin-top: 50px;
+    position: absolute;
+}
+.label_password{
+    margin-top: 50px;
+    position: absolute;
+}
+#login_button{
+    width: 90px;
+    margin-top: 60px;
+}
+#username_error{
+    position: absolute;
+    width: 250px;
+    height: 20px;
+    background-color: #ff7f50;
+    margin-right: 20px;
+}
+#body_frame{
+    width: 700px;
+    height: auto;
+    background-color:#d3d3d3;
+}
+#navigation{
+    position: absolute;
+}
+#left_panel{
+    float: left;
+    width: 200px;
+    height: auto;
+    background-color:#d3d3d3;
+}
+#main_central_body {
+    margin-left: 10px;
+    width: 500px;
+    height: auto;
+    background-color: #d3d3d3;
+}
+#right_body{
+    float: right;
+    width: 180px;
+    height: auto;
+}
+#page_body{
+    width: 708px;
+    height: 300px;
+    background-color: gray;
+    margin-top: 40px;
+}
