@@ -1,0 +1,60 @@
+
+.overlay{
+    background:transparent url(images/overlay.png) repeat top left;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:100;
+}
+.box{
+    position:fixed;
+    top:-200px;
+    left:30%;
+    right:30%;
+    background-color:#fff;
+    color:#7F7F7F;
+    padding:20px;
+    border:2px solid #9aeafb;
+    -moz-border-radius: 20px;
+    -webkit-border-radius:20px;
+    -khtml-border-radius:20px;
+    -moz-box-shadow: 0 1px 5px #9aeafb;
+    -webkit-box-shadow: 0 1px 5px #9aeafb;
+    z-index:101;
+}
+.box h1{
+    border-bottom: 1px dashed #7F7F7F;
+    margin:-20px -20px 0px -20px;
+    padding:10px;
+    background-color: #9aeafb;
+    color:#3ca0eb;
+    -moz-border-radius:20px 20px 0px 0px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -khtml-border-top-left-radius: 20px;
+    -khtml-border-top-right-radius: 20px;
+}
+a.boxclose{
+    cursor:pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#boxsubmit{
+    float: right;
+    background: none;
+    border: none;
+    color: #7F7F7F;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+#loginForm{
+    padding-top: 20px;
+    display: none;
+}
+

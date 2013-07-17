@@ -9,7 +9,7 @@ define('TABLE_STUDENTS', 'students');
 
 //path
 define('LOCAL_PATH_ROOT', 'home/use/projects/final-year-project');
-define('LOCAL_PATH_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/test1/final-year-project' );
+define('LOCAL_PATH_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/past_papers/' );
 include('php/lib/functions.inc.php');
 include('php/lib/database.inc.php');
 include('php/lib/html.inc.php');
