@@ -6,11 +6,14 @@ function getHtmlHeader()
 <head>
     <title>past examination</title>
     <link type="text/css" rel="stylesheet" href="' . getUrl('/public/css/page-style.css') . '">
+    <link type="text/css" rel="stylesheet" href="' . getUrl('/public/css/main.css') . '">
+    <link type="text/css" rel="stylesheet" href="' . getUrl('/public/css/login.css') . '">
     <script type="text/javascript" src="../public/js/js.js"></script>
     <script type="text/javascript" src="../public/js/js_login_pop_up.js"></script>
+    <script type="text/javascript" src="../public/js/main.js"></script>
 
 </head>
-<body>';
+<body class="body">';
     return $html;
 }
 function getHtmlFooter()
@@ -22,13 +25,12 @@ function getHtmlFooter()
 function upperNavigation()
 {
     $sessionShowForm ='';
-    $nav= '<div id="navigation"><a href="current_news.php" id="it_news" > IT news</a>
-          <a href="final_year_project_ideas.php" id="project_ideas" > Final year project ideas</a>
-          <a href="past_exams.php" id="papers" >Available papers</a>';
-
-          $nav .= '<form id="pop">
-          <input type="submit" value="Login"  name="pop" onclick="formPopup();"/></form>';
-
+    $nav= '<div class="center navigation">'.
+          ' <a href="news.php" > IT news</a>'.
+          ' <a href="final_year_project_ideas.php" > Final year project ideas</a>'.
+          ' <a href="past_exams.php">Available papers</a>'.
+          ' <a href="#" id="activator">Login</a>'.
+          '</div>';
     if(isset($_POST['pop'])) {
       $sessionShowForm = $_SESSION['showForm'];
     }
@@ -37,8 +39,8 @@ function upperNavigation()
 function printLoginForm()
 {
 
-  $form= '<form id="overlay_form" style="display:none" method="post" action="'.$_SERVER['PHP_SELF'].'" >
-    <input onclick="clear_form_elements(this.form); formFadeOut();" type="submit" value="Close" id="close" name="close"/>
+  $form= '<form method="post" action="'.$_SERVER['PHP_SELF'].'" id="loginForm">
+    <a href="#" id="boxclose">Close</a>
 
      <div class="login_text">Please enter username and password</div>';
 
@@ -48,7 +50,7 @@ function printLoginForm()
     }
 
   $form .='<label for="username" class="label_username">Username: </label>
-         <input type="text" name="username" id="username" placeholder="Username" value="'.(isset($_POST['username'])? $_POST['username'] : '').'"/><br /><br/>
+         <input type="text" name="username" id="username" placeholder="Username" value="'.(isset($_POST['username'])? $_POST['username'] : '').'"/><br/><br/>
 
          <label for="password" class="label_password">Password: </label>
          <input type="password" name="password" id="password" placeholder="Password" value="'.(isset($_POST['password'])? $_POST['password'] : '').'"/><br/>

@@ -11,7 +11,11 @@ function getFile($file){
 function getUrl($file) {
     return LOCAL_PATH_URL . $file;
 }
-
+function d($val) {
+    echo "<pre>";
+    print_r($val);
+    echo "</pre>";
+}
 function usernamePasswordVerification()
 {
     $username= $_POST['username'];
