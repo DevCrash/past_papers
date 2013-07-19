@@ -5,7 +5,9 @@ session_start();
 if (isset($_POST['login_button'])) {
     usernamePasswordVerification();
 }
+if(isset( $_SESSION['error_login'])) {
 
+}
 echo getHtmlHeader();
 echo upperNavigation();
 ?>

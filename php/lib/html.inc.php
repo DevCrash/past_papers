@@ -8,6 +8,7 @@ function getHtmlHeader()
     <link type="text/css" rel="stylesheet" href="' . getUrl('/public/css/page-style.css') . '">
     <link type="text/css" rel="stylesheet" href="' . getUrl('/public/css/main.css') . '">
     <link type="text/css" rel="stylesheet" href="' . getUrl('/public/css/login.css') . '">
+
     <script type="text/javascript" src="../public/js/js.js"></script>
     <script type="text/javascript" src="../public/js/js_login_pop_up.js"></script>
     <script type="text/javascript" src="../public/js/main.js"></script>
@@ -26,7 +27,7 @@ function upperNavigation()
 {
     $sessionShowForm ='';
     $nav= '<div class="center navigation">'.
-          ' <a href="news.php" > IT news</a>'.
+          ' <a href="current_news.php" > IT news</a>'.
           ' <a href="final_year_project_ideas.php" > Final year project ideas</a>'.
           ' <a href="past_exams.php">Available papers</a>'.
           ' <a href="#" id="activator">Login</a>'.

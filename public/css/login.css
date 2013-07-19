@@ -1,6 +1,6 @@
 
 .overlay{
-   /* background:transparent url(images/overlay.png) repeat top left;*/
+    background:transparent url(images/overlay.png) repeat top left;
     position:fixed;
     top:0px;
     bottom:0px;
@@ -54,10 +54,16 @@ a.boxclose{
 
 }
 #loginForm{
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
     padding-top: 20px;
     display: none;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/master
